@@ -1,0 +1,8 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <StackLayout>
+        <Label text="Напиши фразу и получишь фотку кошки из Интернета с твоей надписью." textWrap="true" />
+        <TextField id="catImageText" />
+        <Button text="Искать" ontap="{{ updateCatImage }}" />
+        <Image id="cat" src="{{ catImageUrl }}" />
+    </StackLayout>
+</Page>

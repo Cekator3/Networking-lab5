@@ -1,0 +1,9 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <StackLayout>
+        <Label text="Напиши URL, на который нужно отправить HTTP-запрос." textWrap="true" />
+        <Label text="Пример: www.youtube.com" />
+        <TextField id="requestQueryTextField" text="" hint="www.youtube.com" />
+        <Button text="Отправить" ontap="{{ sendRequest }}"  />
+        <Image id="httpResponseCodeImage" src="" />
+    </StackLayout>
+</Page>
